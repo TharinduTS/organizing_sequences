@@ -28,7 +28,7 @@ myfolder="your_folder_name_here"
 ```
 for i in ls $mydirectory"/"$myfolder/* ; do echo mafft --adjustdirectionaccurately $i > $i"_aligned.fa" ; done
 ```
-(or set myfolder="/*" to do the same for all the folders inside mydirectory)
+(or set myfolder="*" to do the same for all the folders inside mydirectory)
 
 6. Create a ne mesquite file
   file -> new -> "select the file path" -> ok

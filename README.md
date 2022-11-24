@@ -26,9 +26,13 @@ myfolder="your_folder_name_here"
 ```
 
 ```
-for i in ls $mydirectory"/"$myfolder/* ; do echo mafft --adjustdirectionaccurately $i > $i"_aligned.fa" ; done
+for i in ls $mydirectory"/"$myfolder/* ; do mafft --adjustdirectionaccurately $i > $i"_aligned.fa" ; done
 ```
-(or set myfolder="*" to do the same for all the folders inside mydirectory)
+or use following command to do the same for all the folders inside mydirectory
+
+```
+for i in $(find $mydirectory -name '*.fasta') ; do mafft --adjustdirectionaccurately $i > $i"_aligned.fa" ; done
+```
 
 6. Create a ne mesquite file
   file -> new -> "select the file path" -> ok

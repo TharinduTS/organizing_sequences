@@ -36,3 +36,5 @@ for i in ls $mydirectory"/"$myfolder/* ; do echo mafft --adjustdirectionaccurate
 
 You can doo the same with single reads, but select 
 file -> export -> documents
+
+8. finally align all the unaligned sequences and change the needed bases in mesquite manually

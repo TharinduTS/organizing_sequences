@@ -19,8 +19,13 @@ it will create an aligned file for each file inside my folder with "_aligned" ad
 
 ```bash
 mydirectory="paste/your/directory/here"
-myfolder="your_folder_name_here"
+```
 
+```
+myfolder="your_folder_name_here"
+```
+
+```
 for i in ls $mydirectory"/"$myfolder/* ; do echo mafft --adjustdirectionaccurately $i > $i"_aligned.fa" ; done
 ```
 (or set myfolder="/*" to do the same for all the folders inside mydirectory)
